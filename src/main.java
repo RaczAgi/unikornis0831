@@ -20,5 +20,17 @@ public class main {
             } return min;
         }
 
+        public static int even(int[] array) throws Exception{
+            if (array.length == 0){
+                throw new IllegalArgumentException();
+            }
+            int counter = 0;
+            for (int i = 0; i < array.length; i++) {
+                if(array[i] / 2 == 0){
+                    counter++;
+                }
+            } return counter;
+        }
+
 
 }
