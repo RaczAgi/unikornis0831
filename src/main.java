@@ -74,4 +74,17 @@ public class main {
         }
         return sum;
     }
+
+    public static int countOdd(int[] array) throws Exception {
+        if (array.length == 0) {
+            throw new IllegalArgumentException();
+        }
+        int sumOdd = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                sumOdd += array[i];
+            }
+        }
+        return sumOdd;
+    }
 }
