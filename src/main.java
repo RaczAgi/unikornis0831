@@ -42,7 +42,7 @@ public class main {
         }
         int counter = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] / 2 == 0) {
+            if (array[i] % 2 == 0) {
                 counter++;
             }
         }
@@ -60,5 +60,18 @@ public class main {
             }
         }
         return counter;
+    }
+
+    public static int sumEvenNumbers(int[] array) {
+        if (array.length == 0) {
+            throw new NullPointerException();
+        }
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                sum += array[i];
+            }
+        }
+        return sum;
     }
 }
